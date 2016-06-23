@@ -1,0 +1,66 @@
+
+
+#page1 {
+  background: url(../images/intro-bg.jpg) center center no-repeat;
+  background-size: cover !important;
+}
+
+body {
+  font-family: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 2em;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.viewing-page-1 .onepage-pagination li a:before {
+  background-color: #fff;
+}
+
+.viewing-page-1 .onepage-pagination li a.active:before {
+  border-color: #fff;
+}
+
+.section .icon {
+    text-align: center;
+}
+
+.section .icon {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: solid 2px #4fbfa8;
+    border-radius: 20px;
+    z-index: 1035;
+    cursor: pointer;
+}
+
+.section .icon.up {
+    position: absolute;
+    top: 74px;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    line-height: 34px;
+    border: solid 2px #4fbfa8;
+    border-radius: 20px;
+    z-index: 1035;
+    cursor: pointer;
+}
+
+.services .icon.services {
+    position: inherit;
+    width: 40px;
+    height: 40px;
+    border: solid 1px #555555;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+}

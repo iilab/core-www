@@ -1,0 +1,47 @@
+extends default
+
+block main
+  section#page1
+    .overlay
+    .content
+      .container.clearfix
+        .row
+          .col-md-8.col-md-offset-2.col-sm-12
+            img(src="images/iilab-logo.svg")
+            h2 Applied Research in
+              br
+              |  Public Interest Technology
+            h4
+              | Core Funding Concept Note
+              br
+              | Supporting iilab's operations
+    a.icon.faa-float.animated(onclick='$(".main").moveTo(2)')
+      i.fa.fa-angle-double-down
+  each section,index in children
+    if (index!=2)
+      section(id='page'+(index+2))
+        a.icon.faa-float.up.animated(onclick='$(".main").moveTo(' + (index + 1) + ')')
+          i.fa.fa-angle-double-up
+        .content
+          .container.clearfix
+            .row
+              .col-md-6
+                != section
+              if (images[index])
+                .col-md-5.col-md-offset-1
+                  p
+                    img.img-responsive.img-circle(src='images/'+images[index], alt='')
+        a.icon.faa-float.animated(onclick='$(".main").moveTo(' + (index + 3) + ')')
+          i.fa.fa-angle-double-down
+    else
+      section(id='page'+(index+2))
+        a.icon.faa-float.up.animated(onclick='$(".main").moveTo(' + (index + 1) + ')')
+          i.fa.fa-angle-double-up
+        .content
+          .container.clearfix
+            .row.services
+              .col-md-12
+                != section
+        a.icon.faa-float.animated(onclick='$(".main").moveTo(' + (index + 3) + ')')
+          i.fa.fa-angle-double-down
+      
